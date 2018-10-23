@@ -1,6 +1,399 @@
+html,body {
+    padding:0; margin:0;
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #ffffff;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+
+header {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    color: #333;
+    background: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    background: #4aaaa5;
+    float: left;
+    padding: 20px;
+    height: 90px;
+    margin: auto;
+    margin-left: 15%;
+  }
+
+h2 {
+    padding: 20px;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background: #ffffff;
+    float: right;    
+    font-weight: 100;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
 body {
     
     background-image: url(images/concrete-texture.png);
     background-repeat: repeat;
     color: #777777;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+     
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    color: #666666;
+    background: #fff;
+    width: 98%;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+  }
+
+h3 {
+    font-size: 24px;
+    color: #4aaaa5;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #cccccc;
+}
+
+#bio-image {
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+}
+
+/* Portfolio CSS Code Begins */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}  
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Hangman Image & Text */
+
+.hangmanimg {
+    position: relative;
+    display: inline;
+}
+
+#hangman {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    top: -130px;
+    bottom: 0;
+    right: 0;
+    left: -658px;
+    font-size: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+/* RPG Game Image & Text */
+
+.rpgimg {
+    position: relative;
+    display: inline;
+}
+
+#rpg {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    top: -50px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    font-size: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+/* Trivia Game Image & Text */
+
+.tgimg {
+    position: relative;
+    display: inline;
+}
+
+#tg {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    top: -50px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    font-size: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+/* Rutgers Info Widget Image & Text */
+
+.riwimg {
+    position: relative;
+    display: inline;
+}
+
+#riw {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    top: -50px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    font-size: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+/* Rock Paper Scissors Image & Text */
+
+.rpsimg {
+    position: relative;
+    display: inline;
+}
+
+#rps {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    top: -50px;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    font-size: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+/* Portfolio CSS Code Ends */
+
+
+
+/* Contact CSS Code Begins */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.form {
+    padding: 20px;
+}
+
+/* Contact CSS Code Ends */
+
+p {
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #9f9b99
+}
+
+footer {
+    border-top: 6px solid #4aaaa5;
+    background-color: #666666;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+
+    /* General */
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    h2 {
+        margin-right: 10%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+  
+    .container {
+        width: 60%;
+        padding-right: 30px;
+        margin-left: 50px;
+    }
+
+    /* Portfolio */
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        padding-right: 70px;
+    }  
+    
+    #hangman {
+        top: -105px;
+        left: -559px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* General */
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+  
+    .container {
+        width: 90%;
+        padding-right: 30px;
+        margin-left: auto;
+    }
+
+    /* Portfolio */
+
+    .column {
+        float: left;
+        width: auto;
+        padding: 5px;
+    }  
+    
+    #hangman {
+        top: -105px;
+        left: -403px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    /* General */
+
+    .wrapper {
+        width: 100%;
+        overflow: initial;
+    }
+
+    h1 {
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    h2 {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: -50px;
+        
+    }
+  
+    .container {
+        width: 90%;
+        padding-right: 30px;
+        margin-top: 70px;
+    }
+
+    /* Portfolio */
+
+    .column {
+        float: none;
+        margin: auto;
+        width: 40%;
+        
+    }  
+    
+    #hangman {
+        top: -20px;
+        left: 57px;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Index */
+
+    #bio-image {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+
 }
