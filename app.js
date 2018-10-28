@@ -37,11 +37,11 @@ const mql = window.matchMedia("(min-width: 640px)");
 
 const jsMedia = function (mql) {
     if (mql.matches) {
-        console.log("peanut")
+        
         $(".sidebar1").removeClass("hide");
         $(".sidebar").addClass("hide");
     }else{
-        console.log("walnut")
+        
         $(".sidebar").removeClass("hide");
         $(".sidebar1").addClass("hide");
     }
