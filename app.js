@@ -46,10 +46,10 @@ $(function(){
 $(function() {
     $('.mainbut').hover(
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-20px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-10px'}, 300);
         },
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-115px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-45px'}, 300);
         }
     )
 })
@@ -57,10 +57,10 @@ $(function() {
 $(function() {
     $('.portbut').hover(
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-20px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-10px'}, 300);
         },
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-115px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-45px'}, 300);
         }
     )
 })
@@ -68,10 +68,10 @@ $(function() {
 $(function() {
     $('.contbut').hover(
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-20px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-10px'}, 300);
         },
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-115px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-45px'}, 300);
         }
     )
 })
@@ -79,10 +79,10 @@ $(function() {
 $(function() {
     $('.linkedinbut').hover(
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-20px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-10px'}, 300);
         },
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-115px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-45px'}, 300);
         }
     )
 })
@@ -90,10 +90,10 @@ $(function() {
 $(function() {
     $('.githubbut').hover(
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-20px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-10px'}, 300);
         },
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-115px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-45px'}, 300);
         }
     )
 })
@@ -101,10 +101,10 @@ $(function() {
 $(function() {
     $('.emailbut').hover(
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-20px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-10px'}, 300);
         },
         function() {
-            $('button',$(this)).stop().animate({'margin-left':'-115px'}, 300);
+            $('button',$(this)).stop().animate({'margin-left':'-45px'}, 300);
         }
     )
 })
