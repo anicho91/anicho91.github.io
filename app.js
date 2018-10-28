@@ -33,15 +33,22 @@ const showEmail = function () {
 
 // NAVBAR HOVERS
 
-if (window.matchMedia( "(min-width:640px)" ).matches) {
-    
-$(function(){
-    $(".nav-button").addClass("hide");
-})
+const mql = window.matchMedia("(min-width: 640px)");
 
-$(function(){
-    $(".sidebar").removeClass("hide");
-})
+const jsMedia = function (mql) {
+    if (mql.matches) {
+        console.log("peanut")
+        $(".sidebar1").removeClass("hide");
+        $(".sidebar").addClass("hide");
+    }else{
+        console.log("walnut")
+        $(".sidebar").removeClass("hide");
+        $(".sidebar1").addClass("hide");
+    }
+}
+
+mql.addListener(jsMedia),
+
 
 $(function() {
     $('.mainbut').hover(
@@ -108,27 +115,28 @@ $(function() {
         }
     )
 })
-}else{
-
-    $(function(){
-        $(".nav-button").removeClass("hide");
-    })
 
     $(function() {
-        $('.nav-button').click(
+        $('.nav-button').on("click",
             function() {
                 $(".sidebar").toggleClass("hide");
             }
         )
     })
-}
+
 
 
 //ON CLICK EVENTS
 
 $("#main").on("click", showHome);
+$("#main2").on("click", showHome);
 $("#port").on("click", showPort);
+$("#port2").on("click", showPort);
 $("#cont").on("click", showContact);
+$("#cont2").on("click", showContact);
 $("#linkedin").on("click", showLinkedin);
+$("#linkedin2").on("click", showLinkedin);
 $("#github").on("click", showGitHub);
+$("#github2").on("click", showGitHub);
 $("#email").on("click", showEmail);
+$("#email2").on("click", showEmail);

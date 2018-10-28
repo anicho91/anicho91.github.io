@@ -6,7 +6,7 @@ html,body {
     display: none;
 }
 
-.sidebar {
+.sidebar1 {
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -201,15 +201,32 @@ footer {
     .sidebar {
         background-color: #1f1f1f;
         width: 30%;
-        padding-top: 50px;
+        padding-top: 40px;
         opacity: .9;
+        position: fixed;
+        height: 100%;
+        text-align: center;
+        z-index: 999;
     }
 
-    #main, #port, #cont, #linkedin, #github, #email {
-        margin-left: 0;
-        border-color: transparent;
-        margin-top: -1px;
-        text-align: center;
+    #main2, #port2, #cont2, #linkedin2, #github2, #email2 {
+        background-color: transparent;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 0px solid transparent;
+        color: #cccccc;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        cursor:pointer;
+    }
+
+    #main2:focus, #port2:focus, #cont2:focus, #linkedin2:focus, #github2:focus, #email2:focus {
+        outline: none;
+        color: #8a3838;
+    }
+
+    #main2:hover, #port2:hover, #cont2:hover, #linkedin2:hover, #github2:hover, #email2:hover {
+        text-decoration: underline;
     }
 
     #navbut {
