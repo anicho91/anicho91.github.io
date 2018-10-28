@@ -33,6 +33,16 @@ const showEmail = function () {
 
 // NAVBAR HOVERS
 
+if (window.matchMedia( "(min-width:640px)" ).matches) {
+    
+$(function(){
+    $(".nav-button").addClass("hide");
+})
+
+$(function(){
+    $(".sidebar").removeClass("hide");
+})
+
 $(function() {
     $('.mainbut').hover(
         function() {
@@ -98,6 +108,21 @@ $(function() {
         }
     )
 })
+}else{
+
+    $(function(){
+        $(".nav-button").removeClass("hide");
+    })
+
+    $(function() {
+        $('.nav-button').click(
+            function() {
+                $(".sidebar").toggleClass("hide");
+            }
+        )
+    })
+}
+
 
 //ON CLICK EVENTS
 

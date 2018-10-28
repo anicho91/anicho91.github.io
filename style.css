@@ -173,6 +173,15 @@ footer {
     text-align: center;
 }
 
+#navbut {
+    opacity: 0;
+    z-index: 9999;
+    position:fixed; 
+    top:0; 
+    left:0; 
+    bottom: 0;
+}
+
 @media screen and (max-width: 640px) { 
     #image1, #image2 {
         width: 95%;
@@ -186,5 +195,38 @@ footer {
     background-color: transparent;
     color: #1f1f1f;
     opacity: 1;
+    }
+
+    .sidebar {
+        background-color: #1f1f1f;
+        width: 30%;
+        padding-top: 50px;
+        opacity: .9;
+    }
+
+    #main, #port, #cont, #linkedin, #github, #email {
+        margin-left: 0;
+        border-color: transparent;
+        margin-top: -1px;
+    }
+
+    #navbut {
+        opacity: 1;
+        background-color: #1f1f1f;
+        color: #cccccc;
+        border-radius: 10px;
+        border: 2px solid #cccccc;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 40px;
+        height: 35px;
+        margin-left: 5px;
+        margin-top: 5px;
+        cursor:pointer;
+    }
+
+    #navbut:hover {
+        outline: none;
+        border-color: #8a3838;
     }
 }
