@@ -7,27 +7,29 @@
     <title>Anna's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Anna Nichols</h1> 
+    <div class="sidebar">
 
-            <h2>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">| Portfolio</a></li>
-                        <li><a href="contact.html">| Contact</a></li>
-                    </ul>
-                </nav>
-            </h2>
+        <div class="mainbut">
+            <button type="button" id="main">About</button><br></div>
+        <div class="portbut">
+            <button type="button" id="port">Portfolio</button><br></div>
+        <div class="contbut">
+            <button type="button" id="cont">Contact</button><br></div>
+        <div class="linkedinbut">
+            <button type="button" id="linkedin">Linked In</button><br></div>
+        <div class="githubbut">
+            <button type="button" id="github">Git Hub</button><br></div>
+        <div class="emailbut">
+            <button type="button" id="email">Email Me</button><br></div>
 
-        </header>
+
     </div>
 
-    <div class="container">
+    <div class="container mainDiv">
 
         <section id="main-bio">
 
@@ -35,16 +37,109 @@
 
             <img id="bio-image" src="images/Me.jpg" alt="Anna Nichols">
 
-            <p>I first got a degree in Sociology before realizing that Social Work really wasn't for me. After that I
+            <p>I'm Anna Nichols. I first got a degree in Sociology before realizing that Social Work really wasn't for
+                me. After that I
                 spent a year getting a Geology degree which was much more enjoyable. From spending too much time in
                 Geology labs, I developed a love for minerals (Jesus Christ Marie, they're not rocks! They're
-                MINERALS!). I also learned about terrior and the effects soil and rock composition has on wine. The best part of that class though was learning how to make wine which tasted pretty good for something made in the basement of a science building.</p> 
-                
-            <p>Now I'm beginning my journey to become a full stack developer which is kind of hilarious since even before I started college my parents were telling me to go into something computer related. Of course, being young I thought I knew better and didn't listen. Now years later I'm finding out they were right all along.</p>
+                MINERALS!). I also learned about terrior and the effects soil and rock composition has on wine. The
+                best part of that class though was learning how to make wine which tasted pretty good for something
+                made in the basement of a science building.</p>
+
+            <p>Now I'm beginning my journey to become a full stack developer which is kind of hilarious since even
+                before I started college my parents were telling me to go into something computer related. Of course,
+                being young I thought I knew better and didn't listen. Now years later I'm finding out they were right
+                all along.</p>
         </section>
     </div>
 
-    <footer><br><br>Copyright ©</footer>
+    <div class="container portDiv hide">
+
+        <section id="port-all">
+
+            <h3>Portfolio</h3>
+
+            <div class="row" id="port-images">
+                <div class="column">
+                    <div class="muzipedia">
+                        <img id="image1" src="images/muzipedia.png" alt="cat">
+                        <div class="over1">
+                            <p>Muzipedia</p>
+                            <p>Muzipedia is your one-stop search engine for melding multiple aspects into a
+                                single musical artist search query. Search any artist to retrieve the best set of data
+                                which we then
+                                display in a colorful yet modern way that is easy to read, navigate, and explore.</p>
+                            <p><a href="https://blais-david.github.io/group_project1/">Link to Muzipedia</a> |
+                                <a href="https://github.com/Blais-David/group_project1">Link to GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="employeeSearch">
+                        <img id="image2" src="images/employeesearch.png" alt="cat2">
+                        <div class="over2">
+                            <p>Employee Search</p>
+                            <p>Employee Search allows the user to view current employees, add new employees, and update
+                                information.</p>
+                            <p><a href="https://anicho91.github.io/employeeSearch">Link to Employee Search</a> |
+                                <a href="https://github.com/anicho91/employeeSearch">Link to GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="tgimg">
+                        <img id="image3" src="images/cat3.jpg" alt="cat3">
+                        <p class="over3">placeholder text</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="riwimg">
+                        <img id="image4" src="images/cat4.jpg" alt="cat4">
+                        <p class="over4">placeholder text</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="rpsimg">
+                        <img id="image5" src="images/cat5.jpg" alt="cat5">
+                        <p class="over5">placeholder text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container contactDiv hide">
+
+        <section id="contact">
+
+            <h3>Contact</h3>
+
+            <div class="form">
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="name" placeholder="Your name">
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="email" placeholder="email@email.com">
+
+                    <label for="subject">Message</label><br><br>
+                    <textarea id="subject" name="subject" placeholder="" style="height:200px; width: 100%"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>Copyright ©</footer>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="app.js"></script>
 
 </body>
 
